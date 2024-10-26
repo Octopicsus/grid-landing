@@ -34,20 +34,51 @@ h1 {
     font-size: var(--h1TitleSize);
 }
 
-h2{
+h2 {
     font-size: var(--h2TitleSize);
 }
 
-section{
+section {
     font-size: var(--bodyTitleSize);
     color: var(--altColor);
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
- body {
+body {
     font-family: var(--robotoR);
+    background-color: rgb(249, 249, 249);
+}
+
+header {
+    width: 100%;
+    display: grid;
+    place-items: center center;
+    padding: 30px 0;
+    position: fixed;
+    background-color: rgb(238, 239, 241);
+}
+
+.menu__wrapper {
+    width: var(--mainWrapper-Width);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-self: start;
+    gap: 42px;
+}
+
+.menu a:hover {
+    color: var(--brandColor-hover);
+}
+
+.main__title {
+    background-color: rgb(238, 239, 241);
+    width: 100%;
+    height: 700px;
 }
