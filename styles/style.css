@@ -38,9 +38,14 @@ h2 {
     font-size: var(--h2TitleSize);
 }
 
+h5{
+    font-size: 21px;
+}
+
 section {
     font-size: var(--bodyTitleSize);
     color: var(--altColor);
+    line-height: 24px;
 }
 
 a {
@@ -51,6 +56,7 @@ a {
 body {
     font-family: var(--robotoR);
     background-color: rgb(249, 249, 249);
+    width: 100%;
 }
 
 header {
@@ -81,4 +87,120 @@ header {
     background-color: rgb(238, 239, 241);
     width: 100%;
     height: 700px;
+    display: grid;
+    justify-items: center;
+}
+
+.main__title__wrapper {
+    width: var(--mainWrapper-Width);
+    padding-top: 258px;
+}
+
+.main__title h1 {
+    margin-bottom: 60px;
+}
+
+.main__title section {
+    width: 540px;
+    margin-bottom: 65px;
+}
+
+.main__title button {
+    padding: 18px 40px;
+    border: none;
+    background-color: var(--brandColor);
+    color: white;
+    cursor: pointer;
+}
+
+.main__title button:hover {
+    background-color: var(--brandColor-hover);
+}
+
+.about__title {
+    display: grid;
+    justify-items: center;
+    padding-top: 112px;
+    padding-bottom: 100px;
+}
+
+.about__title__wrappe {
+    width: var(--mainWrapper-Width);
+}
+
+.about__title h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about__title section {
+    width: 540px;
+    text-align: center;
+}
+
+.portfolio{
+    display: grid;
+    justify-items: center;
+    background-color: var(--brandColor);
+    padding: 100px 0;
+    width: 100%;
+}
+
+.portfolio__wrapper{
+    width: var(--mainWrapper-Width);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.work__card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: start;
+  align-items: center;
+}
+
+.work__card h5{
+    color: white;
+}
+
+.work__card section{
+    color: white;
+}
+
+.work__card__icon{
+    background-image: url(/img/project.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1110px) {
+
+    :root {
+        --mainWrapper-Width: 100%;
+    }
+
+    .main__title {
+        height: 100vh;
+    }
+
 }
