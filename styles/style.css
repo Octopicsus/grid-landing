@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'RobotoR';
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoM';
+    src: url('/fonts/Roboto-Medium.ttf');
+}
+
+:root {
+    --brandColor: rgb(52, 84, 122);
+    --brandColor-hover: rgb(60, 96, 139);
+    --altColor: rgb(114, 114, 114);
+    --h1TitleSize: 48px;
+    --h2TitleSize: 32px;
+    --bodyTitleSize: 16px;
+    --mainWrapper-Width: 1110px;
+    --robotoR: 'RobotoR';
+    --robotoM: 'RobotoM';
+}
+
+
+
+
+
+
+h1,
+h2 {
+    font-family: var(--robotoM);
+}
+
+h1 {
+    font-size: var(--h1TitleSize);
+}
+
+h2{
+    font-size: var(--h2TitleSize);
+}
+
+section{
+    font-size: var(--bodyTitleSize);
+    color: var(--altColor);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ body {
+    font-family: var(--robotoR);
+}
