@@ -136,7 +136,6 @@ header {
     box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
     transition: box-shadow .15s, top .3s, transform .3s .15s;
     background-color: rgba(255, 255, 255, 0.158);
-
 }
 
 .burger-checkbox:checked+.burger::after {
@@ -350,7 +349,7 @@ footer {
 @media (max-width: 1110px) {
 
     :root {
-        --mainWrapper-Width: 99%;
+        --mainWrapper-Width: 100%;
         --h1TitleSize: 3rem;
         --h2TitleSize: 32px;
         --bodyTitleSize: 1rem;
@@ -383,7 +382,6 @@ footer {
 @media (max-width: 1024px) {
 
     :root {
-        --mainWrapper-Width: 100%;
         --h1TitleSize: 4rem;
         --h2TitleSize: 3rem;
         --bodyTitleSize: 1.2rem;
