@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'RobotoR';
-    src: url('/fonts/Roboto-Regular.ttf');
+    src: url('/grid-landing/fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
     font-family: 'RobotoM';
-    src: url('/fonts/Roboto-Medium.ttf');
+    src: url('/grid-landing/fonts/Roboto-Medium.ttf');
 }
 
 :root {
@@ -267,7 +267,7 @@ header {
 }
 
 .work__card__icon {
-    background-image: url(/img/project.svg);
+    background-image: url(/grid-landing/img/project.svg);
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
@@ -299,7 +299,7 @@ header {
 }
 
 .demo__video {
-    background-image: url(/img/demo.png);
+    background-image: url(/grid-landing/img/demo.png);
     background-repeat: no-repeat;
     display: grid;
     justify-self: center;
@@ -309,7 +309,7 @@ header {
 }
 
 .demo__video__icon {
-    background-image: url(/img/play-button.svg);
+    background-image: url(/grid-landing/img/play-button.svg);
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
@@ -427,6 +427,10 @@ footer {
 
 @media (max-width: 768px) {
 
+    .main__title {
+        height: 90vh;
+    }
+
     .demo__video {
         width: calc(1110px*0.5);
         height: calc(600px*0.5);
@@ -434,6 +438,18 @@ footer {
 
     .portfolio__wrapper {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-item {
+        font-size: 2rem;
+    }
+
+    .main__title section {
+        width: 80%;
+    }
+
+    .about__title section {
+        width: 80%;
     }
 
 }
@@ -448,7 +464,7 @@ footer {
     }
 
     .main__title {
-        height: 90vh;
+        height: 70vh;
         width: 89%;
         padding: var(--padding);
         align-items: center;
@@ -458,14 +474,6 @@ footer {
         padding: var(--padding);
         width: 100%;
         padding: 0;
-    }
-
-    .main__title section {
-        width: 100%;
-    }
-
-    .about__title section {
-        width: 80%;
     }
 
     .portfolio {
@@ -487,11 +495,26 @@ footer {
     }
 
     .demo__video {
-        width: calc(1110px*0.33);
-        height: calc(600px*0.33);
+        width: calc(1110px*0.36);
+        height: calc(600px*0.36);
     }
 
     .footer__wrapper {
         width: 100%;
     }
 }
+
+@media (max-width: 376px){
+
+    .main__title {
+        height: 90vh;
+        
+    }
+
+    .demo__video {
+        width: calc(1110px*0.3);
+        height: calc(600px*0.3);
+    }
+}
+
+
