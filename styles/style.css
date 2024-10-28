@@ -94,7 +94,7 @@ header {
 
 .burger {
     position: relative;
-    z-index: 1;
+    z-index: 999;
     cursor: pointer;
     display: block;
     position: relative;
@@ -304,6 +304,7 @@ header {
 .demo__video__wrapper img {
     width: var(--mainWrapper-Width);
     position: relative;
+    z-index: 0;
 }
 
 .demo__video__icon {
@@ -315,6 +316,7 @@ header {
     align-self: center;
     position: absolute;
     cursor: pointer;
+    z-index: 1;
 }
 
 .demo__video__icon:hover {
