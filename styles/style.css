@@ -492,6 +492,10 @@ footer {
 
 @media (max-width: 432px) {
 
+    header{
+        padding: 10px 0;
+    }
+
     .main__title__wrapper {
         padding-top: 150px;
     }
