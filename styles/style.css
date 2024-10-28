@@ -57,7 +57,7 @@ a {
 body {
     font-family: var(--robotoR);
     background-color: rgb(249, 249, 249);
-    width: 100%;
+    overflow: hidden;
 }
 
 header {
